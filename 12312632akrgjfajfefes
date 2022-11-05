@@ -55,12 +55,6 @@ Tab:AddButton({
     end;
 })
 Tab:AddButton({
-	Name = "Sirius",
-    Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexsoftworks/Sirius/request/source", true))()
-    end;
-})
-Tab:AddButton({
 	Name = "OPFinality GUI",
     Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/PhoenixAceVFX/Roblox-Scripts/master/!%20%5BFE%5D%20OPFinality%20Gui%20%5BBEST%5D.txt(2).lua", true))()
