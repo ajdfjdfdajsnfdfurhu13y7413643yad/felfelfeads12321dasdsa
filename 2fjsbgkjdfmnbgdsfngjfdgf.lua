@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Pandora Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Configs",IntroText = "Pandora Hub"})
+local Window = OrionLib:MakeWindow({Name = "Pandora Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "Configs",IntroText = "Pandora Hub"})
 OrionLib:MakeNotification({
 	Name = "Hello, Pandora Hub's user!",
 	Content = "Thanks you for using our Script Hub.",
