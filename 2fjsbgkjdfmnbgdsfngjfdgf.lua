@@ -153,7 +153,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "SpeedHack",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/killersess/frise_x/main/load.lua"))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/Walk%20Speed.lua"))()
     end;
 })
 Tab:AddButton({
