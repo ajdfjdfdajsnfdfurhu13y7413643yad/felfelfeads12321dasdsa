@@ -148,29 +148,13 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Tab:AddSlider({
-		Name = "WalkSpeed",
-		Min = 0,
-		Max = 100,
-		Default = 0,
-		Color = Color3.fromRGB(255,255,255),
-		Increment = 1,
-		ValueName = "Speed",
-		Callback = function(Value)
-			print(Value)
-		end
+
 })
-Tab:AddSlider({
-	Name = "JumpPower",
-	Min = 0,
-	Max = 100,
-	Default = 0,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Power",
-	Callback = function(Value)
-		print(Value)
-	end
+Tab:AddButton({
+	Name = "SpeedHack",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/killersess/frise_x/main/load.lua"))()
+    end;
 })
 Tab:AddButton({
 	Name = "Anti AFK",
