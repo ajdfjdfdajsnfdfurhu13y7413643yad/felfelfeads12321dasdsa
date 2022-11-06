@@ -167,6 +167,12 @@ Tab:AddButton({
     end;
 })
 Tab:AddButton({
+	Name = "Reset character if reset has been blocked",
+    Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/ResetButton.lua", true))()
+    end;
+})
+Tab:AddButton({
 	Name = "Anti AFK",
     Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/Anti%20AFK.lua", true))()
