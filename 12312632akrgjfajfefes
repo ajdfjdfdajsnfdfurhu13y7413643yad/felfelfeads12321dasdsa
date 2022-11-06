@@ -126,6 +126,18 @@ Tab:AddButton({
     end;
 })
 Tab:AddButton({
+	Name = "TP Click(On Q)",
+    Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/tpclick.lua", true))()
+    end;
+})
+Tab:AddButton({
+	Name = "Rejoiner",
+    Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/Rejoiner.lua", true))()
+    end;
+})
+Tab:AddButton({
 	Name = "Grab Knife V4",
     Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/python1331/fe-script-on-roblox/main/grab_knife_v4.lua.txt", true))()
