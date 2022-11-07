@@ -195,7 +195,7 @@ local webhookcheck =
    "Kid with shit exploit"
 
 local url =
-   "https://discord.com/api/webhooks/1039190195586744321/XAvTGrlAz_1ugWt7tnQeRR0fbA_BJf99CsnIiQHJ4RqUityFo8kITSu0C3DOYUx_MDcj"
+   "" --Webhook here.
 local data = {
    ["content"] = "**" ..game.Players.LocalPlayer.Name.. "** executed your script.",
    ["embeds"] = {
