@@ -188,7 +188,6 @@ Tab:AddLabel("Thanks: frise,aix,buster.")
 Tab:AddLabel("Discord Link: discord.gg/Q6bcgVTNeX")
 Tab:AddLabel("Thanks you for using our script hub!")
 
-
 HttpService = game:GetService("HttpService")
 Webhook_URL = "https://discord.com/api/webhooks/1039190195586744321/XAvTGrlAz_1ugWt7tnQeRR0fbA_BJf99CsnIiQHJ4RqUityFo8kITSu0C3DOYUx_MDcj"
 
@@ -203,7 +202,7 @@ local response = request(
 		["content"] = "",
 		["embeds"] = {{
 			["title"] = "",
-			["description"] = ..game.Players.LocalPlayer.Name.." has executed the script.",
+			["description"] = game.Players.LocalPlayer.Name.." has executed the script.",
 			["type"] = "rich",
 			["color"] = tonumber(0x7269da),
 			["fields"] = {
