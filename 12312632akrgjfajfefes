@@ -78,7 +78,7 @@ Tab:AddButton({
     end;
 })
 Tab:AddButton({
-	Name = "FE Insta Kill
+	Name = "FE Insta Kill",
     Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/fe-insta-kill", true))()
     end;
