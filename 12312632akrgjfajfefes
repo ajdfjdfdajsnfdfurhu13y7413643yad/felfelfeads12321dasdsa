@@ -203,7 +203,7 @@ local Tab = Window:MakeTab({
 })
 Tab:AddLabel("Programmer: Lord1k#2111.")
 Tab:AddLabel("Thanks: kazuin.")
-Tab:AddLabel("Discord Link: discord.gg/Q6bcgVTNeX")
+Tab:AddLabel("Discord Link: discord.gg/bJPywwTZak")
 Tab:AddLabel("Thanks you for using our script hub!")
 
 HttpService = game:GetService("HttpService")
