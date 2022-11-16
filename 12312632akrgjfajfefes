@@ -19,13 +19,19 @@ Tab:AddButton({
     end;
 })
 Tab:AddButton({
+	Name = "OWl Hub(Only Synapse X, SirHurt, Sentinel and Script-Ware",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+    end;
+})
+Tab:AddButton({
 	Name = "Infinity Yield",
     Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source', true))()
     end;
 })
 Tab:AddButton({
-	Name = "Dark Dex V3",
+	Name = "Bypassed Dark Dex V3",
     Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
     end;
