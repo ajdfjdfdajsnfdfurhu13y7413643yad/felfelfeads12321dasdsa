@@ -19,7 +19,7 @@ Tab:AddButton({
     end;
 })
 Tab:AddButton({
-	Name = "OWl Hub(Only Synapse X, SirHurt, Sentinel and Script-Ware",
+	Name = "Owl Hub(Only Synapse X, SirHurt, Sentinel and Script-Ware",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
     end;
