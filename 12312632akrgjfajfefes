@@ -13,7 +13,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "Loader New Pandora Hub",
+	Name = "Loader New GUI Pandora",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/BestLeak8866/LeakedFrise-X/main/Main-Script"))()
     end;
@@ -84,9 +84,9 @@ Tab:AddButton({
     end;
 })
 Tab:AddButton({
-	Name = "FE Cop",
+	Name = "Click Fling",
     Callback = function()
-      		loadstring(game:HttpGet("https://pastebin.com/nCHS7wHn", true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/BestLeak8866/LeakedFrise-X/main/clckfling", true))()
     end;
 })
 Tab:AddButton({
