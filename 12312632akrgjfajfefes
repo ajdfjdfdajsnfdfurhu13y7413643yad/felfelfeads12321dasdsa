@@ -207,8 +207,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Tab:AddLabel("Programmer: Lord1k#2111.")
-Tab:AddLabel("Thanks: kazuin.")
+Tab:AddLabel("Programmer: raze#2111.")
+Tab:AddLabel("Thanks: Kruben#8006")
 Tab:AddLabel("Discord Link: discord.gg/bJPywwTZak")
 Tab:AddLabel("Thanks you for using our script hub!")
 
