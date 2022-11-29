@@ -89,7 +89,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "FE Fling Gun",
     Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/python1331/fe-script-on-roblox/main/lutiy_fe_script.lua", true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/lutiy_fe_script.lua", true))()
     end;
 })
 Tab:AddButton({
@@ -119,7 +119,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "FE OP gui",
     Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/python1331/fe-script-on-roblox/main/Cheat_menu.lua.txt", true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/Cheat_menu.lua.txt", true))()
     end;
 })
 Tab:AddButton({
@@ -131,19 +131,19 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "FE Stand(R15 only)",
     Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/python1331/fe-script-on-roblox/main/message.txt", true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/message.txt", true))()
     end;
 })
 Tab:AddButton({
 	Name = "FE Stand(R6 only)",
     Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/python1331/fe-script-on-roblox/main/message_1.txt", true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/message_1.txt", true))()
     end;
 })
 Tab:AddButton({
 	Name = "FE PP V2",
     Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/python1331/fe-script-on-roblox/main/FE_PP_V2.txt", true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/FE_PP_V2.txt", true))()
     end;
 })
 Tab:AddButton({
@@ -179,13 +179,13 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Grab Knife V4",
     Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/python1331/fe-script-on-roblox/main/grab_knife_v4.lua.txt", true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/grab_knife_v4.lua.txt", true))()
     end;
 })
 Tab:AddButton({
 	Name = "Gamesense",
     Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/python1331/fe-script-on-roblox/main/gamesense.lua.txt", true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lord1k-x/fe-script-on-roblox/main/gamesense.lua.txt", true))()
     end;
 })
 Tab:AddButton({
@@ -222,7 +222,7 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Tab:AddLabel("Programmer: raze#2111.")
+Tab:AddLabel("Programmer: raze#2111 aka Lord1k.")
 Tab:AddLabel("Discord Link: discord.gg/bJPywwTZak")
 Tab:AddLabel("Thanks you for using our script hub!")
 
@@ -300,4 +300,3 @@ Tab:AddButton({
 		end
 	end
 })
-
